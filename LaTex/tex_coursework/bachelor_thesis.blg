@@ -1,0 +1,11 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: bachelor_thesis.aux
+The style file: IEEEtran.bst
+Database file #1: bachelor_thesis.bib
+-- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Too many commas in name 1 of "Costin Badica, Zoran Budimac, Hans-Dieter Burkhard, Mirjana Ivanovic" for entry ap4
+while executing---line 2411 of file IEEEtran.bst
+
+Done.
+(There was 1 error message)

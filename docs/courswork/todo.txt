@@ -1,0 +1,4 @@
+-create google disk repository
+-create text file with all ideas to distinguish the main goal
+-read books provided by Therletskiy
+-

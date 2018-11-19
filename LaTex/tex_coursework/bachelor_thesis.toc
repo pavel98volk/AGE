@@ -1,0 +1,47 @@
+\select@language {english}
+\contentsline {chapter}{Introduction}{4}
+\contentsline {paragraph}{Relevance}{4}
+\contentsline {paragraph}{Practical implementation of the results}{4}
+\contentsline {paragraph}{Individual contribution}{4}
+\contentsline {chapter}{\numberline {Chapter\nobreakspace 1}Game Development}{5}
+\contentsline {section}{\numberline {1.1}Developer Roles}{5}
+\contentsline {section}{\numberline {1.2}Storyline Creation}{6}
+\contentsline {section}{\numberline {1.3}Domain Specific Modeling}{7}
+\contentsline {chapter}{\numberline {Chapter\nobreakspace 2}Multi-Agent Systems}{10}
+\contentsline {section}{\numberline {2.1}Agent Notion}{10}
+\contentsline {section}{\numberline {2.2}Environment}{12}
+\contentsline {section}{\numberline {2.3}Agent Architecture}{13}
+\contentsline {section}{\numberline {2.4}Utility Functions}{15}
+\contentsline {section}{\numberline {2.5}Agent Communication}{17}
+\contentsline {subsection}{\numberline {2.5.1}KQML}{17}
+\contentsline {subsection}{\numberline {2.5.2}FIPA}{18}
+\contentsline {subsection}{\numberline {2.5.3}KIF}{20}
+\contentsline {section}{\numberline {2.6}Software Overview}{20}
+\contentsline {chapter}{\numberline {Chapter\nobreakspace 3}Designing the Multi-Agent System}{22}
+\contentsline {section}{\numberline {3.1}Task Specification}{22}
+\contentsline {subsection}{\numberline {3.1.1}The development workflow}{22}
+\contentsline {section}{\numberline {3.2}Creating Structure}{25}
+\contentsline {subsection}{\numberline {3.2.1}Communication between Model0 entities}{27}
+\contentsline {subsection}{\numberline {3.2.2}GameObject (Fig. \ref {GameObj})}{28}
+\contentsline {subsection}{\numberline {3.2.3}GameAgent (Fig. \ref {GameAg})}{29}
+\contentsline {subsection}{\numberline {3.2.4}GameEnvironment (Fig. \ref {GameEnv})}{29}
+\contentsline {subsection}{\numberline {3.2.5}GameEnvironmentObject/GameEnvironmentAgent}{31}
+\contentsline {section}{\numberline {3.3}Human Integration}{31}
+\contentsline {section}{\numberline {3.4}Framework Design}{33}
+\contentsline {subsection}{\numberline {3.4.1}GameObject}{34}
+\contentsline {subsection}{\numberline {3.4.2}GameAgent}{34}
+\contentsline {subsection}{\numberline {3.4.3}GameEnvironment}{35}
+\contentsline {subsection}{\numberline {3.4.4}GameEnvironmentObject/GameEnvironmentAgent}{35}
+\contentsline {subsection}{\numberline {3.4.5}Advantages of Using \textit {Model0V} Voices in \textit {Model1}}{37}
+\contentsline {paragraph}{Attention driven resource distribution}{37}
+\contentsline {section}{\numberline {3.5}Choosing the Framework}{37}
+\contentsline {section}{\numberline {3.6}Examples of the Framework Usage}{38}
+\contentsline {section}{\numberline {3.7}Possible Usage}{39}
+\contentsline {paragraph}{Testing Game AI}{39}
+\contentsline {paragraph}{Directing Movies}{40}
+\contentsline {paragraph}{NOT Playing Games}{40}
+\contentsline {chapter}{Conclusions}{41}
+\contentsline {chapter}{Bibliography}{42}
+\def \@chapapp {\appendixname }
+\def \@appendix@number@width {.5em}
+\contentsline {chapter}{\numberline {Appendix\nobreakspace \CYRA }The Comparative Table of Multi-Agent Frameworks, Platforms and Simulation Toolkits}{44}

@@ -1,0 +1,8 @@
+\section{Possible Usage}
+The initial goal is to create a system for storyline creation. But the resulting architecture can be used for different other purposes.
+\paragraph{Testing Game AI}
+Since in \textit{Model0V} architecture human can control the behaviour of all other classes by resolving messages and event handlers, \texit{Model0V} based software provides the developer ability to test artificial intelligence algorithms in a simulated environment without actually implementing the environment and having full control over each entity in it.
+\paragraph{Directing Movies}
+Since the \underline{GameObserverVoice} class is capable of channeling the received information outside the program, it may be used to control entities in another environment (for example unity) that can capture the result to form a movie sequence or other kind of informational entity.
+\paragraph{NOT Playing Games}
+Model1 specification was designed to accept every kind of possible game with all the complexities of each possible entity. That is mostly due to the high level of abstraction and human based structure. On the other hand, such approach leads to an extremely low computational performance. While computer is not busy calculating physics of particles and rendering high resolution images such performance is plausible, but playing high-end games that are based on \textit{Model1} specification from the previous paragraph would not be possible. However, in some cases, it might be useful to connect the developed framework to a game engine in order to obtain more interactive type of result and minimize the work of the developers by channeling data from the storyline creation system directly into the game.

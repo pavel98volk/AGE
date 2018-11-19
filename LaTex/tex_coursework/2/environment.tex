@@ -1,0 +1,12 @@
+\section{Environment}
+
+There is a huge variety in multi-agent systems of functionality that can be provided by the environment. The environment itself can be implemented as one of the agents. On the other hand, it can be used to simplify the structure of all other agents. For example, environment can contain all internal memory of each agent and give their information to them on demand. There are several classifications of environments based on different parameters. Here are some of them according to \cite{DUMMY:1} and \cite{ArtInt}.
+\begin{itemize}
+\item \textbf{Agent capacity.} Single agent environments are deprived of complexity that is common to multi-agent systems. The main problems that are nonexistent in single agent systems are agent communication and simultaneous access.
+\item \textbf{Observability (Accessibility).}  The agent can obtain complete information about the fully observable environment's state in any particular moment. Partially observable environments are a lot more common in the real world. According to \cite{ArtInt} fully observable environment must only provide all the necessary information for the agent to determine the optimal course of actions.
+\item \textbf{Determinism.} In deterministic environment the state of the environment is completely determined by the actions of the agent. In any other case it is called stochastic. The only exception given in \cite{ArtInt} is uncertainty that is caused by the actions of other agents.
+\item \textbf{Dynamism.} Static environment is guaranteed to preserve its state when no actions are executed by agent. Dynamic environment, on the other hand, usually treats agent's delay of response as idle action. Most multi-agent systems are highly dynamic.
+\item \textbf{Discretion.} Discrete environment has finite amount of possible states. Continuous environments usually feature one or more continuous value that rises the number of possible states to infinity. Despite no continuous environments can be created within digital ones, some of the environments.
+\item \textbf{Episodicity.} The agent's actions does not affect the observable part of the state in episodic environment. No matter which action is executed by the agent it will not affect any later percepts the agent will be given. The environment that is not episodic is called sequential.
+\end{itemize}
+

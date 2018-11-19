@@ -1,0 +1,68 @@
+\documentclass[14pt]{vakthesis}
+\usepackage{local}
+%\usepackage[master]{thesis-title} % для магістрів
+%\usepackage[bachelor]{thesis-title} % для бакалаврів
+%\usepackage[specialist]{thesis-title} % для спеціалістів
+\usepackage[course]{thesis-title} % для курсової
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{setspace}
+\graphicspath{ {./images/} }
+%\geometry{hmargin={30mm,15mm},lines=29,vcentering}
+\geometry{left=2cm,right=1cm,top=2cm,bottom=2cm}
+
+%\inputonly{ch1,bib}
+
+%\listfiles
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\begin{document}
+
+\title{Development of the Multi-Agent System for Game Scenario Design}
+
+\author{Pavlo S. Volkovyy}
+       {3rd year bachelor student}
+
+\supervisor{Dmytro O. Terletskyi}
+           {Assistant Professor} % асистент
+
+%           {Associate Professor} % для доцента
+%           {Professor} % для професора
+
+\institution{Taras Shevchenko National University of Kyiv\\
+Faculty of Computer Science and Cybernetics\\
+Department of Information Systems}{Kyiv}
+%\overrightarrow{}
+% Для курсових це треба закоментувати
+% \accepted{кафедри інформаційних систем}{9}{10 червня 2017 року}
+% {Завідувач кафедри інформаційних систем проф. Провотар~О.~І.}
+
+\date{2018}
+
+\maketitle
+
+% Зміст
+\tableofcontents
+
+\input{intro}%       Вступ
+
+\input{1}
+
+\input{2}
+
+\input{3}
+
+\input{resume}%       Висновки
+
+%\bibliographystyle{gost71u}
+\bibliographystyle{IEEEtran} % Для сортування літератури за алфавітом
+%\bibliographystyle{ugost2008s}
+\bibliography{bachelor_thesis}
+\appendix
+\input{app_1}
+
+\end{document}

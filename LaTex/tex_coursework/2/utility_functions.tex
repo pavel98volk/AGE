@@ -1,0 +1,19 @@
+\section{Utility Functions}
+The essential part of each intelligent agent is goal-driven behaviour.
+The most common way to determine the goal of an agent is to specify its utility function \cite{DUMMY:1}.
+The perfect utility function result mirrors agent's success of reaching its goals.
+The simplest solution is for utility function to evaluate the current state of the environment
+(\(u: E\rightarrow \mathbb{R} \)). This kind of utility function proves itself to be inefficient on long-term strategies, but it is still widely used in different fields, such as neural networks. The solution may be for the agent to build a new utility function on top of the given one that will use one's state as an argument. Yet for those who don't want for their agent to feature complex reasoning mechanisms there is a broader class of utility functions which accept the whole run with all the information in it as an argument -- \(u: R\rightarrow \mathbb{R} \).
+This is the widest class of utility functions. It features such subclasses as predicates (\(u: R\rightarrow \{0,1\} \)), useful for determining whether the particular goal was achieved.\par
+When agent's utility function is constructed, the only thing agent is left to do is to maximize it.
+In real environments, which are mostly nondeterministic, highly dynamic and hardly accessible it is possible to operate only with probabilities. For example, sometimes there is no certain answer whether the environment would end up being in a particular state after the agent executes a particular set of actions. Nevertheless, by measuring the probability of this to happen it is still possible to determine the optimal strategy.
+Each agent of course might influence the probability of a particular run.
+\[\sum_{r \in R(Ag, Env)} P (r| Ag, Env ) = 1\]
+Here the \(P (r| Ag, Env )\) is a probability of the run r to happen with agent $Ag$ and the environment $Env$. \(R(Ag, Env)\) is a set of all possible runs of the agent Ag in the environment $Env$.
+
+The concept of  expected utility is described by the next equation.
+\[ u_{exp}(Ag,Env)  = \sum_{r \in R(Ag, Env)} u(r) *P (r| Ag, Env ) \]
+The u(r) represents the utility value of a particular run.
+
+The optimal agent is considered to be the one that maximizes the expected utility.
+\[ Ag_{opt}(Env)  = \max_{Ag\in AG} u_{exp}(Ag,Env)\]

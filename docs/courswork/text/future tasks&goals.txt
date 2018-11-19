@@ -1,0 +1,13 @@
+task: create framework... based on multi-agent system.
+  sub-task1: create game-generation framework that uses widespread terms to generate specific game components.
+  sub-task2: create game-adaptation framework that processes individual user game data to determine optimal game process.
+goal: identify and use player's knowledge base to maximize productivity of game process.
+  sub-goal1: use terms used by player to accelerate process of data transfer between player and game.
+  sub-goal2: detectøòï game->player data transfer errors and correcting them.
+
+possible player's knowledge sources: general knowledge shared though humanity, individual user game data , specialized data.
+informal goal: "understand what player understands & demand what player can execute & adapt to player's desires."
+
+name future: designing and developing multi-agent system to use player's knowledge in game development.
+
+

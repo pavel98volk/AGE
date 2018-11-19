@@ -1,0 +1,32 @@
+\section{Framework Design}
+This section describes how to move from the abstract architecture created earlier to a more specific framework design. However, the design should not connected to any particular programming language.The results off this formalizing stage will be referenced as \textbf{Model1}
+\begin{center}
+    \textbf{Model1 specification}
+\end{center}
+At first there are more detailed specifications of internal structure of each class that was introduced in previous chapters.
+\subsection{GameObject}
+\texttt{GameObject} class is not given by default  any computational power. When event handler is executed, it uses computational power of the process that triggered this event handler. \texttt{GameObject} should not be active unless it was ``disturbed'' (the event handler was triggered). However, when ``disturbed'', \texttt{GameObject's} response is not bounded in time. For example, once activated, alarm might be sending alarm messages until it will be deactivated. To handle such ``disturbances'', \texttt{GameEnvironmentBroadcaster} class is created (one for each environment). The purpose of this class is to send specified message to each registered \texttt{GameObject} with specified time interval in between. Each \texttt{GameObject}  can send a message to the \texttt{GameEnvironment} with the desired return message and invocation interval to attempt registration within the \texttt{GameEnvironmentBroadcaster}. If the registration is successful, \texttt{GameObject} receives the corresponding message. The mechanism of deregistration is similar. In any moment of time \texttt{GameObject} can be also deregistered from the \texttt{GameEnvironmentBroadcaster} by the \texttt{GameEnvironment} itself. In this case it still receives a message with information about the deregistration event.\par
+External and internal properties are saved as two map containers with name as a key to improve access speed. The environment can get, set, create and delete external parameters.
+The map container for internal properties is useful in case \textit{Model0V} is being taken into account.
+Events are passed as a message, response is given as a message as well.
+
+\subsection{GameAgent}
+One of the key differences between \texttt{GameObject} and \texttt{GameAgent} is that \texttt{GameAgent} can initiate communication with its environment. There are no stateless \texttt{GameAgents}. \texttt{GameAgent's} state should feature at least the assigned \texttt{GameEnvironment}.
+\texttt{GameAgent} is should be implemented as autonomous entity, therefore the easy solution is to assign individual thread to each agent. Inefficiency of this solution is mostly seen when there is a huge amount of agents that can not influence the environment. Alternative solution is shown in the next subsection.
+
+\subsection{GameEnvironment} \\
+It is easier to specify \texttt{GameEnvironment} part by part.
+\begin{itemize}
+\item \textbf{GameEnvironmentMessageHandler} is used to analyze all messages that are passed through the environment. This peculiarity does make \break \texttt{GameEnvironmentMessageHandler} the main bottleneck of the system. To solve this problem, \texttt{GameEnvironmentMessageHandler} can use computational power of the sender agent when a message is passed. Also it should feature the individual computational power in order to maintain the environment when all other agents are deactivated.\par
+    Along with sending messages, this part can invoke setters and getters of any entity in the corresponding \texttt{GameEnvironmentEntityContainer}.
+\item \textbf{GameEnvironmentEntityContainer} should implement the effective mechanism of resource distribution among \texttt{GameAgents}. Since every time the message to be passed  \texttt{GameEnvironmentEntityContainer} $find$ function is invoked. That grants the \texttt{GameEnvironmentEntityContainer} for example, the ability to collect useful data about how many times the particular \texttt{GameObject} was invoked in the nearest period of time, store that data in the \texttt{GameObject's} external properties and use that data to calculate the amount of computational resources the agent will be given.
+
+\item \textbf{GameEnvironmentResourcePool} is the module in which all resources as well as resource-giving classes are being held and given out. In particular, it contains \texttt{GameEnvironmentBroadcaster} object.
+\end{itemize}
+
+\subsection{GameEnvironmentObject/GameEnvironmentAgent} \\
+The peculiarity of \texttt{GameDoubleObject} has additional $setInternalMessage$ function that can be invoked by its event handlers. To send a message to the external environment after being ``disturbed'' by the internal one or vice versa the \texttt{GameDoubleObject} should have the destination of the messages which it can send, therefore it should be given internal \texttt{GameEnvironmentMessageHandler} as well as the external one upon creation similarly to \texttt{GameAgent}.
+
+\subsection{Advantages of Using \textit{Model0V} Voices in \textit{Model1}}\break
+\paragraph{Attention driven resource distribution}
+ To achieve better distribution of computational resources each agent can feature the external property of attention, assigned and constantly changed by the \texttt{GameObserverVoice} entity. If the attention to the entity drops below minimum, it is reasonable to exclude this entity from the equation by destroying or ``freezing'' it. 

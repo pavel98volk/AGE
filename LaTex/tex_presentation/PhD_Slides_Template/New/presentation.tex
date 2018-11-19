@@ -1,0 +1,280 @@
+\documentclass[xcolor=dvipsnames]{beamer}
+\usepackage[T1, T2A]{fontenc}
+ \usepackage[cp1251]{inputenc}
+\usepackage[english, ukrainian]{babel}
+\usepackage{cmap,amsmath,amssymb,amsthm, bm}
+\usepackage[document]{ragged2e}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{subcaption}
+\usepackage{floatflt}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+\setbeamercovered{transparent}
+
+
+\setbeamercolor{mycolor}{fg=blue,bg=yellow}
+\setbeamercolor{mcolor}{fg=white,bg=CadetBlue}
+
+
+
+
+\defbeamertemplate*{footline}{shadow theme}{%
+\leavevmode%
+% \hbox{\begin{beamercolorbox}[wd=.1\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm plus1fil,rightskip=.3cm]{author in head/foot}%
+%     \usebeamerfont{author in head/foot}\hfill\insertshortauthor
+% \end{beamercolorbox}%
+\hbox{\begin{beamercolorbox}[wd=.92\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.15cm,rightskip=.15cm plus1fil]{mcolor}%
+    \usebeamerfont{title in head/foot}{\tiny Designing the framework for a game storyline design software}\hfill%
+\end{beamercolorbox}%
+\begin{beamercolorbox}[wd=.08\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.2cm,rightskip=.2cm plus1fil]{mycolor}%
+\hfill\insertframenumber\,/\,\inserttotalframenumber
+\end{beamercolorbox}}%
+\vskip0pt%
+}
+
+
+
+\setbeamertemplate{blocks}[shadow=false]
+
+% \setbeamercolor{itemize item}{fg=CadetBlue}
+% \setbeamercolor{itemize subitem}{fg=CadetBlue}
+
+
+\setbeamercolor{structure}{fg=CadetBlue}
+
+% \setbeamercolor{title}{fg=CadetBlue}%
+% \setbeamercolor{framesubtitle}{fg=CadetBlue}%
+
+\setbeamertemplate{caption}[numbered]
+
+\addtobeamertemplate{theorem begin}{%
+    \setbeamerfont{theorem title}{series=\bfseries}
+    \setbeamercolor{block title}{fg=black, bg=YellowGreen!80}%
+    \setbeamercolor{block body}{bg=YellowGreen!20!white}%
+}{}
+
+\theoremstyle{plain}
+\newtheorem{Mytheorem}{???????}[]
+
+\theoremstyle{definition}
+\newtheorem{Def}{?????????}[]
+
+
+
+% Malmoe
+
+\usefonttheme{serif}
+
+\usetheme{Pittsburgh}
+\usecolortheme{beaver}
+
+% seagull
+% dolphin
+% wolverine
+
+%\framesubtitle{}
+
+
+
+\newsavebox{\authbox}
+\sbox{\authbox}{%
+\centering
+\begin{minipage}{0.35\linewidth}
+\centering\footnotesize
+роботу виконав: \par
+{\bf Волковий Павло} \\ {\bf Сергійович }
+\end{minipage}
+\hfill
+\begin{minipage}{0.55\linewidth}
+\centering\footnotesize
+науковий керівник: \par
+ассистент\\ {\bf Терлецький Дмитро Олександрович}
+\end{minipage}
+}
+
+\title{\bf  Development of the Multi-Agent System for Game Scenario Design.\newline
+            Розробка мультиагентної системи проектування ігрових сценаріїв }
+\author[]{%
+\usebox{\authbox}
+}
+\institute{Київський національний університет ім. Тараса Шевченка \\ кафедра іноформаційних систем.}
+\date{\scriptsize Травень -- 2018}
+%\logo{\includegraphics[width=0.7cm]{developers.png}}
+
+
+ \begin{document}
+\begin{frame}{\ \ \ \ \normalize}
+
+%  \begin{flushright}
+%  {\scriptsize ??? 004.82+004.89+004.43}
+% \end{flushright}
+
+%\framesubtitle{\hspace{2.6cm} subtitle text\\ \hspace{3.7cm}another subtitle text}
+\titlepage
+
+\end{frame}
+
+\begin{frame}{Мета/Актуальність}
+\framesubtitle{}
+{\scriptsize
+\textbf{\textit{Мета роботи}: Розробити архітектуру фреймворка  для проектування ігрових сценаріїв.\break }
+\textit{Актуальність}
+\begin{itemize}
+ \itemsep=1.0mm
+ \item Відсутність аналогів
+ \item Прискорення процесу редагування сценаріїв
+ \item Підвищення можливостей розробника.
+ \item Досконале збереження інформації.
+\end{itemize}
+
+}
+\end{frame}
+\begin{frame}{Процес розробки ігор}
+\framesubtitle{}
+{\scriptsize
+\begin{center}
+\includegraphics[width=300pt]{developers}
+\end{center}
+\begin{itemize}
+ \itemsep=1.0mm
+ \item Взаємозв'язок між класами розробників 
+ \item Аналіз роботи сценариста
+ 
+\end{itemize}}
+
+\end{frame}
+\begin{frame}{Концепція мультиагентних систем}
+\framesubtitle{}
+{\scriptsize
+\begin{itemize}
+ \itemsep=1.0mm
+ \item Поняття агента
+ \item Середовище
+ \item Абстрактні архітектури
+ \item Функції застосовності
+\end{itemize}
+\begin{itemize}
+ \itemsep=1.0mm
+ \item Концепт спілкування
+ \item Стандарти комунікації між агентами
+\end{itemize}}
+\end{frame}
+\begin{frame}{Доступне програмне забезпечення}
+\framesubtitle{}
+{\scriptsize
+ \item Огляд можливих систем
+ }
+\end{frame}
+\begin{frame}{Конкретизація завдання}
+\framesubtitle{}
+{\scriptsize
+\begin{itemize}
+ \itemsep=1.0mm
+ \item Місце сценариста у загальному процесі розробки
+ \item Елементи проектування сценарію, які є сенс автоматизувати
+\end{itemize}}
+\end{frame}
+\begin{frame}{Абстрактна архітектура : Model0}
+\framesubtitle{}
+сутності
+{\scriptsize
+\begin{center}
+\includegraphics[width=150pt]{game_inheritance}
+\end{center}
+\begin{itemize}
+ \itemsep=1.0mm
+ \item GameObject
+ \item GameAgent
+ \item GameEnvironment
+ \item GameObjectEnvironment
+ \item GameAgentEnvironment
+\end{itemize}
+}
+\end{frame}
+\begin{frame}{Абстрактна архітектура : Model0V}
+\framesubtitle{}
+{\scriptsize
+Сутності.
+\begin{itemize}
+ \itemsep=1.0mm
+ \item GameObserverAgent
+ \item GameThinkerAgent
+ \item GameManagerAgent
+ \item GameSageAgent
+ \item GameBuilderAgent
+\end{itemize}}
+\end{frame}
+\begin{frame}{GameObject/GameAgent}
+\framesubtitle{}
+{\scriptsize
+Складові сутності.
+\begin{itemize}
+ \itemsep=1.0mm
+ \item Internal properties
+ \item External properties
+ \item Event handlers
+\end{itemize}}
+\end{frame}
+
+\begin{frame}{GameEnvironment}
+\framesubtitle{}
+{\scriptsize
+GameEnvironment представлено як складену сутність, яку функціонально можна поділити на декілька частин.
+\begin{itemize}
+ \itemsep=1.0mm
+ \item GameEnvironmentMessageHandler
+ \item GameEnvironmentEntityContainer
+ \item GameEnvironmentRecoursePool
+ \item GameEnvironmentBroadcaster
+\end{itemize}}
+\end{frame}
+\begin{frame}{GameObjectEnvironment/GameAgentEnvironment}
+\framesubtitle{}
+{\scriptsize
+\begin{itemize}
+ \itemsep=1.0mm
+ \item Особливості
+\end{itemize}}
+\end{frame}
+
+\begin{frame}{Voices}
+\framesubtitle{}
+{\scriptsize
+ \begin{center}
+\includegraphics[width=300pt]{voices}
+\end{center}
+}
+\end{frame}
+\begin{frame}{Вибір фреймворку для реалізації}
+\framesubtitle{}
+{\scriptsize
+\begin{center}
+\includegraphics[width=300pt]{feature_dependencies}
+\end{center}
+ 
+}
+\end{frame}
+\begin{frame}{Висновки}
+\framesubtitle{}
+{\scriptsize
+У роботі було розглянуто
+\begin{itemize}
+ \itemsep=1.0mm
+ \item Можливі форми організації процесу розробки ігор та місце сценариста у цьому процесі. 
+ \item Можливості мультиагентних систем у рамках симуляції ігрових середовищ.
+ \item Можливість інтеграції системи для розробки ігрових сценаріїв у процес розробки ігор.
+\end{itemize}
+Було запропоновано
+\begin{itemize}
+ \itemsep=1.0mm
+ \item Абстрактну архітектуру фреймворку для проектування ігрових сценаріїв.
+ \item Оптимальний фреймворк для створення даної мультиагентної системи.
+\end{itemize}
+У роботі не представлено жодної практичної реалізації спроектованої системи, але в майбутньому планується реалізація фрейморку та створення конкретної системи для проектування ігрових сценаріїв.
+}
+\end{frame}
+
+
+\end{document}

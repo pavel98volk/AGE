@@ -1,0 +1,148 @@
+\ProvidesPackage{local}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T2A]{fontenc}
+
+
+%\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage{wrapfig}
+% Ï³äêëþ÷åííÿ íåîáõ³äíèõ ïàêåò³â. Íàïðèêëàä,
+% Ïàêåòè AMS äëÿ ï³äòðèìêè ìàòåìàòèêè, òåîðåì, ñïåö³àëüíèõ øðèôò³â
+\usepackage{amsmath}%[intlimits]
+\allowdisplaybreaks
+\usepackage{amsthm}
+\usepackage{amssymb}
+% Òàáëèö³ ç³ ñòîâï÷èêàìè, ùî ðîçòÿãóþòüñÿ
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{hhline}
+
+\usepackage[sort&compress,square,comma, numbers]{natbib}
+
+\usepackage{moreverb}
+
+\renewcommand{\baselinestretch}{1.45}
+\emergencystretch = 25pt
+\tolerance=400
+\flushbottom
+
+% Íàëàãîäæåííÿ íóìåðîâàíèõ ñïèñê³â
+%\usepackage{enumerate}
+%\usepackage{enumitem}
+
+% Ã³ïåðòåêñòîâ³ äîêóìåíòè
+%\usepackage{hyperref}
+% àáî ëèøå ñïåö³àëüíå ôîðìàòóâàííÿ URL
+\usepackage{url}
+
+% Ó ñïèñêó ë³òåðàòóðè çâîðîòí³ âêàç³âêè íà ïîñèëàííÿ
+%\usepackage{backref}
+
+
+% Îçíà÷åííÿ òåîðåì (òåîðåìîïîä³áíèõ ñòðóêòóð)
+% Êëàñè÷íèé âàð³àíò: äëÿ êîæíî¿ òåîðåìè ñâ³é ë³÷èëüíèê,
+% òîáòî òåîðåìà 1.1, ëåìà 1.1, òåîðåìà 1.2
+%\theoremstyle{plain}
+%\newtheorem{theorem}{Òåîðåìà}[chapter]
+%\newtheorem{lemma}{Ëåìà}[chapter]
+%\newtheorem{corollary}{Íàñë³äîê}[chapter]
+%\theoremstyle{definition}
+%\newtheorem{definition}{Îçíà÷åííÿ}[chapter]
+%\theoremstyle{remark}
+%\newtheorem{remark}{Çàóâàæåííÿ}[chapter]
+% Ö³êàâèé âàð³àíò: âñ³ òåîðåìè íóìåðóþòüñÿ îäíèì ë³÷èëüíèêîì,
+% òîáòî òåîðåìà 1.1, ëåìà 1.2, òåîðåìà 1.3
+\theoremstyle{plain}
+
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{Axiom}{Axiom}[chapter]
+
+
+%\newtheorem{lemma}[theorem]{Ëåìà}
+%\newtheorem{corollary}[theorem]{Íàñë³äîê}
+\theoremstyle{definition}
+\newtheorem{Def}{Definition}[chapter]
+\newtheorem{Assert}{Assertion}[chapter]
+\newtheorem{example}{Example}[chapter]
+
+
+%\newtheorem{example}[theorem]{Ïðèêëàä}
+%\theoremstyle{remark}
+%\newtheorem{remark}[theorem]{Çàóâàæåííÿ}
+
+% Îòî÷åííÿ àíàëîã³÷íå äî cases, àëå ç êâàäðàòíîþ äóæêîþ
+\newenvironment{sqcases}{%
+  \matrix@check\sqcases\env@sqcases
+}{%
+  \endarray\right.%
+}
+\def\env@sqcases{%
+  \let\@ifnextchar\new@ifnextchar
+  \left\lbrack
+  \def\arraystretch{1.2}%
+  \array{@{}l@{\quad}l@{}}%
+}
+
+% Ëîêàëüí³ îçíà÷åííÿ
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\set}[1]{{\left\{#1\right\}}}
+\newcommand{\abs}[1]{{\left\lvert#1\right\rvert}}
+\newcommand{\norm}[2][]{\left\lVert#2\right\rVert_{#1}}
+
+\newcommand{\prob}[1]{{{\rm P}\set{#1}}}
+
+\newcommand{\dom}{\mathop{\rm dom}}
+
+\def\argmax{\mathop{\rm argmax}\limits}
+\def\argmin{\mathop{\rm argmin}\limits}
+
+% Ëîêàëüí³ îçíà÷åííÿ
+% Òóò øìàòîê âñÿêî¿ ô³ãí³, ÿêà êîëèñü êîìóñü áóëà
+% ïîòð³áíà, à çàðàç º ëèøå íàáîðîì ïðèêëàä³â :)
+% \newcommand{\m}[1]{\(#1\)}
+% \newcommand{\canbreak}{\pagebreak[3]}
+% \newcommand{\msim}{\(\sim\)}
+% \newcommand{\mtheta}{\(\theta\)}
+% \newcommand{\msigma}{\(\sigma\)}
+% \newcommand{\tp}[1]{\({^{\text{#1}}}\)}
+% \newcommand{\tb}[1]{\ensuremath{_{\text{#1}}}}
+% \newcommand{\prat}{~\cyra\cyrt.~\%}
+% \newcommand{\pers}{\%}
+% \newcommand{\ksf}{\(K_{\textrm{ñô}}\)}
+% \newcommand{\nic}{\mbox{Ni--C}}
+% \newcommand{\nimn}{\mbox{Ni--Mn}}
+% \newcommand{\mnmn}{\mbox{Mn--Mn}}
+% \newcommand{\nini}{\mbox{Ni--Ni}}
+% \newcommand{\cc}{\mbox{C--C}}
+% \newcommand{\mnc}{\mbox{Mn--C}}
+% \newcommand{\mec}{\mbox{Me--C}}
+% \newcommand{\nmc}{\mbox{Ni--Mn--C}}
+% \newcommand{\nmcm}{Ni$_{35}$Mn$_{57}$C$_8$}
+% \newcommand{\nicm}{Ni$_{92}$Ñ$_8$}
+% \newcommand{\eut}{Ni$_{38}$Mn$_{62}$}
+% \newcommand{\CYRhs}{\CYRT\CYRS}
+% \newcommand{\Cels}{\(\,^{\circ}\)C}
+% \newcommand{\sr}{~\textrm{ñð}}
+% \newcommand{\nm}{~\textrm{íì}}
+% \newcommand{\K}{~K}
+% \newcommand{\mDjpm}{~ìÄæ/ì\tp{2}}
+% %more sophisticated
+% \renewcommand{\emph}[1]{\textsl{#1}}
+% \renewcommand{\int}{\intop\limits}
+% \labelwidth=-\leftmargini \leftmargini=0pt
+% \newcommand*{\hm}[1]{#1\nobreak\discretionary{}%
+%             {\hbox{$\mathsurround=0pt #1$}}{}}
+% %\renewcommand{\captionlabeldelim}{.}
+% \renewenvironment{description}
+% 		{\list{}{\labelwidth\z@\leftmargin=0pt \itemindent-\leftmargin
+% 	              \let\makelabel\descriptionlabel}}
+% 		{\endlist}
+% \newcommand{\mpageref}[1]{ (äèâ. ñòîð.~\pageref{#1})}
+% \hyphenation{äîñ-ë³ä-æåí-íÿ âèâ-÷åí-íÿ}
+

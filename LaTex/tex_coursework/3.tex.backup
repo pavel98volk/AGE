@@ -1,0 +1,14 @@
+
+\chapter{Topic of section № 3}
+
+
+% Підрозділ 3.1
+\input{3/part_1}
+
+% Підрозділ 3.2
+\input{3/part_2}
+
+% Підрозділ 3.3
+\input{3/part_3}
+
+

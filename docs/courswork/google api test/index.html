@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+       <script src="http://okfnlabs.org/wikipediajs/wikipedia.js" type ="application/javascript"></script>
+        
+      <script src = "google.js" type="application/javascript"></script>
+    </head>
+    <body>
+        <div id="wikitext"></div>
+        <img id="image" height="400px"/>
+        <div id = "controls">
+        <input type ="text" placeholder="race" width="10%" id="race"/>
+        <input type ="button" value ="search location" onclick="findConnections(document.getElementById('race').value,locations)"/> 
+        <input type ="button" value ="search powers" onclick="findConnections(document.getElementById('race').value,powers)"/> 
+         <input type ="button" value ="search alignment" onclick="findConnections(document.getElementById('race').value,alignment)"/> 
+         <input type ="button" value ="define creature" onclick="createCreatureSpecs(document.getElementById('race').value)"/> 
+        <input type ="button" value ="see picture" onclick="findPicture(document.getElementById('race').value)"/> 
+        </div>
+        
+    </body>
+
+</html>
