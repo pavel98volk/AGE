@@ -21,27 +21,26 @@
 \contentsline {section}{\numberline {3.1}Task Specification}{22}
 \contentsline {subsection}{\numberline {3.1.1}The development workflow}{22}
 \contentsline {section}{\numberline {3.2}Creating Structure}{25}
-\contentsline {subsection}{\numberline {3.2.1}Communication between Model0 entities}{27}
-\contentsline {subsection}{\numberline {3.2.2}GameObject (Fig. \ref {GameObj})}{28}
-\contentsline {subsection}{\numberline {3.2.3}GameAgent (Fig. \ref {GameAg})}{29}
-\contentsline {subsection}{\numberline {3.2.4}GameEnvironment (Fig. \ref {GameEnv})}{29}
+\contentsline {subsection}{\numberline {3.2.1}Communication between Model0 entities}{26}
+\contentsline {subsection}{\numberline {3.2.2}GameObject}{28}
+\contentsline {subsection}{\numberline {3.2.3}GameAgent}{29}
+\contentsline {subsection}{\numberline {3.2.4}GameEnvironment}{29}
 \contentsline {subsection}{\numberline {3.2.5}GameEnvironmentObject/GameEnvironmentAgent}{31}
 \contentsline {section}{\numberline {3.3}Human Integration}{31}
 \contentsline {section}{\numberline {3.4}Framework Design}{33}
-\contentsline {subsection}{\numberline {3.4.1}GameObject}{34}
+\contentsline {subsection}{\numberline {3.4.1}GameObject}{33}
 \contentsline {subsection}{\numberline {3.4.2}GameAgent}{34}
-\contentsline {subsection}{\numberline {3.4.3}GameEnvironment}{35}
+\contentsline {subsection}{\numberline {3.4.3}GameEnvironment}{34}
 \contentsline {subsection}{\numberline {3.4.4}GameEnvironmentObject/GameEnvironmentAgent}{35}
-\contentsline {subsection}{\numberline {3.4.5}Advantages of Using \textit {Model0V} Voices in \textit {Model1}}{37}
-\contentsline {paragraph}{Attention driven resource distribution}{37}
-\contentsline {section}{\numberline {3.5}Choosing the Framework}{37}
-\contentsline {section}{\numberline {3.6}Examples of the Framework Usage}{38}
-\contentsline {section}{\numberline {3.7}Possible Usage}{39}
-\contentsline {paragraph}{Testing Game AI}{39}
-\contentsline {paragraph}{Directing Movies}{40}
-\contentsline {paragraph}{NOT Playing Games}{40}
-\contentsline {chapter}{Conclusions}{41}
-\contentsline {chapter}{Bibliography}{42}
+\contentsline {subsection}{\numberline {3.4.5}Advantages of Using \textit {Model0V} Voices in \textit {Model1}}{36}
+\contentsline {section}{\numberline {3.5}Choosing the Framework}{36}
+\contentsline {section}{\numberline {3.6}Examples of the Framework Usage}{37}
+\contentsline {section}{\numberline {3.7}Possible Usage}{38}
+\contentsline {paragraph}{Testing Game AI}{38}
+\contentsline {paragraph}{Directing Movies}{39}
+\contentsline {paragraph}{NOT Playing Games}{39}
+\contentsline {chapter}{Conclusions}{40}
+\contentsline {chapter}{References}{41}
 \def \@chapapp {\appendixname }
 \def \@appendix@number@width {.5em}
-\contentsline {chapter}{\numberline {Appendix\nobreakspace \CYRA }The Comparative Table of Multi-Agent Frameworks, Platforms and Simulation Toolkits}{44}
+\contentsline {chapter}{\numberline {Appendix\nobreakspace \CYRA }The Comparative Table of Multi-Agent Frameworks, Platforms and Simulation Toolkits}{43}

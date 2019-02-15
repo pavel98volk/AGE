@@ -1,0 +1,14 @@
+<GameEnvironment name="Map2DGameEnvironment">
+  <inheritFrom>
+    <updateAllChildren></updateAllChildren>
+  </inheritFrom>
+  <updateMechanisms>
+    <passTime argName='currTime'></passTime>
+    <passChildContainerProp propName='x'></passChildContainerProp>
+  </updateMechanisms>
+  <requiredChildContainerProps>
+    <prop name ='x' type='number'></prop>
+    <prop name ='y' type='number'></prop>
+  </requiredChildContainerProps>
+
+</GameEnvironment>

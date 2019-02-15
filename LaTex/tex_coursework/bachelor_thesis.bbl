@@ -28,19 +28,15 @@ Video game development. [Online]. Available:
 \BIBentrySTDinterwordspacing
 
 \bibitem{DUMMY:7}
-S.~G. Hallvard~Tratteberg, Alf Inge~Wang, ``\BIBforeignlanguage{english}{A
+H.~Tratteberg, A.~I. Wang, and S.~Gao, ``\BIBforeignlanguage{english}{A
   workflow for model driven game development},''
   \emph{\BIBforeignlanguage{english}{IEEE 19th International Enterprise
   Distributed Object Computing Conference}}, 2015.
 
 \bibitem{DUMMY:1}
 M.~Wooldridge, \emph{An Introduction to MultiAgent Systems}, 2nd~ed.\hskip 1em
-  plus 0.5em minus 0.4em\relax John Wiley and Sons Ltd,  2009.
+  plus 0.5em minus 0.4em\relax 2009 John Wiley and Sons Ltd, 2004.
 
-\bibitem{ArtInt}
-S.~Russell and P.~Norvig, \emph{Artificial Intelligence: A Modern Approach}, Third~ed.\hskip 1em
-  plus 0.5em minus 0.4em\relax Pearson Education Inc., .
-  
 \bibitem{DUMMY:6}
 M.~Wooldridge and N.~R. Jennings, ``\BIBforeignlanguage{english}{Intelligent
   agents: theory and practice},'' \emph{\BIBforeignlanguage{english}{The
@@ -52,7 +48,7 @@ L.~Sterling and K.~Taveter, \emph{The Art of Agent-Oriented Modeling},
 
 \bibitem{ap5}
 \BIBentryALTinterwordspacing
-M.~S.-M. Thania Rendon-Sallard, ``A review on multi-agent platforms and
+T.~Rendon-Sallard and M.~Sanchez-Marre, ``A review on multi-agent platforms and
   environmental decision support systems simulation tools,'' [Available
   online]. [Online]. Available:
   \url{https://upcommons.upc.edu/bitstream/handle/2117/87344/R06-4.pdf}
@@ -63,24 +59,8 @@ G.~Weiss, \emph{Multiagent systems - a modern approcach to distributed
   artificial intelligence}, 1st~ed.\hskip 1em plus 0.5em minus 0.4em\relax
   Massachusetts institute of technology, 1999.
 
-\bibitem{ap3}
-\BIBentryALTinterwordspacing
-R.~Leszczyna, ``Evaluation of agent platforms,'' 2008, [Available online;
-  Technical Report]. [Online]. Available:
-  \url{http://publications.jrc.ec.europa.eu/repository/bitstream/JRC47224/reqno_jrc47224.pdf}
-\BIBentrySTDinterwordspacing
-
-\bibitem{ArtInt}
-D.~G. Fabio Luigi~Bellifemine, Giovanni~Caire, \emph{Developing Multi-Agent
-  Systems with JADE}.\hskip 1em plus 0.5em minus 0.4em\relax John Wiley and
-  sons ltd., 2007.
-  
 \bibitem{JAVAap}
-\BIBentryALTinterwordspacing
-P.~Vrba, ``Java-based agent platforms evaluation,'' [Available online].
-  [Online]. Available:
-  \url{https://pdfs.semanticscholar.org/e88e/058ea74658aee012b9a9b1f97a56c42bd0f3.pdf}
-\BIBentrySTDinterwordspacing
+P.~Vrba, ``Java-based agent platforms evaluation,'' 2003.
 
 \bibitem{jadeDoc}
 \BIBentryALTinterwordspacing
@@ -88,9 +68,12 @@ Jade site. [Online]. Available: \url{http://jade.tilab.com/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{jadeBook}
-D.~G. Fabio Luigi~Bellifemine, Giovanni~Caire, \emph{Developing Multi-Agent
+F.~L. Bellifemine, G.~Caire, and D.~Greenwood, \emph{Developing Multi-Agent
   Systems with JADE}.\hskip 1em plus 0.5em minus 0.4em\relax John Wiley and
   sons ltd., 2007.
+
+\bibitem{ap3}
+R.~Leszczyna, ``Evaluation of agent platforms,'' 07 2004.
 
 \bibitem{warcraft}
 \BIBentryALTinterwordspacing
@@ -100,31 +83,28 @@ Warcraft: Orcs & humans. [Online]. Available:
 
 \bibitem{ap4}
 \BIBentryALTinterwordspacing
-H.-D. B. M.~I. Costin~Badica, Zoran~Budimac, ``Software agents: Languages,
-  tools, platforms,'' 2011, [Available online]. [Online]. Available:
-  \url{http://www.comsis.org/pdf.php?id=305-1012}
+C.~Badica, Z.~Budimac, H.-D. Burkhard, and M.~Ivanovic,
+  ``\BIBforeignlanguage{eng}{Software agents: Languages, tools, platforms},''
+  \emph{\BIBforeignlanguage{eng}{Computer Science and Information Systems}},
+  no.~18, pp. 255--298, 2011. [Online]. Available:
+  \url{http://eudml.org/doc/252587}
 \BIBentrySTDinterwordspacing
 
 \bibitem{ap1}
 \BIBentryALTinterwordspacing
-N.~B. Kalliopi~Kravari, ``A survey of agent platforms,'' January 2015,
+K.~Kravari and N.~Bassiliades, ``A survey of agent platforms,'' January 2015,
   [Înline]. [Online]. Available:
   \url{http://jasss.soc.surrey.ac.uk/18/1/11.html}
 \BIBentrySTDinterwordspacing
 
 \bibitem{ap2}
-\BIBentryALTinterwordspacing
-M.~G. Florin~Leon, Marcin~Paprzycki, ``A review of agent platforms,'' November
-  2015, [Available oline; ICT COST Action IC1404, Multi-Paradigm Modelling for
-  Cyber-Physical Systems (MPM4CPS)]. [Online]. Available:
-  \url{http://florinleon.byethost24.com/cost_ic1404/agent_platforms.htm?i=1}
-\BIBentrySTDinterwordspacing
+F.~Leon, M.~Paprzycki, and M.~Ganzha, ``A review of agent platforms,'' November
+  2015.
 
 \bibitem{wikiSoft}
 \BIBentryALTinterwordspacing
 Comparison of agent-based modeling software. [Online]. Available:
   \url{https://en.wikipedia.org/wiki/Comparison_of_agent-based_modeling_software}
 \BIBentrySTDinterwordspacing
-
 
 \end{thebibliography}

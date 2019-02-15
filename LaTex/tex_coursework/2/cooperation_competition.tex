@@ -2,10 +2,10 @@
 Agent communication is one of the cornerstones of multi-agent systems. Since each agent is autonomous and features goal-driven behaviour, the overall communication mechanism is much more ``human-like'': instead of executing requests, it becomes more of a deal-making utility-centered conversation. But for that conversation to exist agents at least should understand each other. To make it easier to design the agent communication, different agent communication languages were created. The most popular are FIPA-ACL, KQML and KIF \cite{ap5, DUMMY:1,DUMMY:2,DUMMY:3}.
 \subsection{KQML}
 KQML stands for Knowledge Query and Manipulation Language.
-This language represents a message as an object. Each message has a performative that specifies its type and a list of parameters, which are depicted as ``attribute : value'' pairs.
+This language represents a message as an object. Each message has a performative that specifies its type and a list of parameters, which are depicted as ``attribute:value'' pairs.
 \begin{center}
 \begin{tabular}{|p{1cm} |p{3cm} | p{12cm}|}
-\multicolumn{3}{c}{\textbf{Some of KQML attributes}}\\
+\multicolumn{3}{c}{\textbf{Some attributes of KQML}}\\
 \hline
 \textnumero & \textbf{attribute} & \textbf{meaning} \\
 \hline
@@ -34,7 +34,7 @@ Therefore, a message in KQML may look like this one:
 \end{align*}
 
  ``Ask-one'', in the message above, is a performative. There are around 50 performatives in KQML, each describing the corresponding message type.\par
- The dialogues in KQML can be either synchronous or asynchronous. The types of dialogues are represented on Figure \ref{KQMLDialog}.
+ The dialogues in KQML can be either synchronous or asynchronous. The types of dialogues are represented on Figure~\ref{KQMLDialog}.
     \begin{figure}[h!]
       \begin{center}
      \includegraphics[width=300pt]{kqml}

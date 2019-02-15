@@ -6,31 +6,31 @@ The task can be split in two parts:
 \item Design the game development system (featuring other developers) in which \textit{System0} can function and be useful. This one will be called \textb{the development workflow}.
 \end{enumerate}
 \subsection{The development workflow}
-To design \textit{System0's} it is firstly needed to understand the exact features this system needs to help other developers the most. For that let us analyze \textit{the development workflow} in detail.\par
+To design \textit{System0} it is firstly needed to understand the exact features this system needs to help other developers the most. For that let us analyze \textit{the development workflow} in detail.\par
 As it was mentioned in the first section of chapter 1 , there are quite a few roles on the development team.
 In \textit{the development workflow}, most of this people will exchange information with \textit{System0} in different points of time. Consider a couple of examples
 \begin{example}
 The only person who influences the result of a storyline creation is the story designer.  Other just process what was created. Each member has responsibilities shown below.
 \begin{itemize}
- \item \textbf{storyline designer} provides the initial configuration to a storyline creating system (\textit{System0}). During the simulation one provides information requested by the system.
+ \item \textbf{Storyline designer} provides the initial configuration to a storyline creating system (\textit{System0}). During the simulation one provides information requested by the system.
  \item \textbf{Level/World designer} designs the game world according to the output of \textit{System0}.
  \item \textbf{Game artist} provides essential content to the level designer.
  \item \textbf{Game designer} analyzes \textit{System0}'s output and then determines the optimal game mechanics. Afterwards, programmer creates the logical core of the future game and interprets the final story so it can be embedded into the game.
 \end{itemize}
     \begin{figure}[h!]
      \begin{center}
-      \includegraphics[width=400pt]{workflow_1}
+      \includegraphics[width=250pt]{workflow_1}
       \caption{Example of game development interaction diagram \textnumero 1}
       \label{SimpleWorkflow}
      \end{center}
     \end{figure}
-Dependencies between the developers are depicted on Fig. \ref{SimpleWorkflow}. Arrows represent data flow during the development process.
+Dependencies between the developers are depicted on Figure~\ref{SimpleWorkflow}. Arrows represent data flow during the development process.
 \end{example}
 
 That is one of the least interactive examples. On the other side, there can be workflows, in which \textit{System0} is actively will communicate with every member of the development team.
 
 \begin{example}
-In this example,which is visualized in Figure \ref{RealWorkflow}, every team member exchanges data with \textit{System0}. The list of responsibilities changes as well.
+In this example,which is visualized in Figure~\ref{RealWorkflow}, every team member exchanges data with \textit{System0}. The list of responsibilities changes as well.
 \begin{itemize}
  \item \textbf{Storyline designer} does mostly the same actions.
  \item \textbf{Level/World designer} designs the world based on \textit{System0's} output, but this time one is given an ability to have an impact on \textit{System0's} result by specifying environmental details. For example, one can specify restrictions before the start of \textit{System0} or be questioned by \textit{System0} during the storyline creation.
@@ -39,7 +39,7 @@ In this example,which is visualized in Figure \ref{RealWorkflow}, every team mem
 \end{description}
  \begin{figure}[h!]
     \begin{center}
-      \includegraphics[width=400pt]{workflow_2}
+      \includegraphics[width=250pt]{workflow_2}
       \caption{Example of game development interaction diagram \textnumero 2.}
       \label{RealWorkflow}
      \end{center}

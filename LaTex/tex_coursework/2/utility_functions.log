@@ -1,9 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.10)  1 JUL 2018 21:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.10)  15 FEB 2019 10:41
 entering extended mode
 **utility_functions.tex
-
-(C:\Users\VolfP\Desktop\Coursework\AGE\literature\tex_coursework\2\utility_func
-tions.tex
+(D:\etc\2018\Coursework\LaTex\tex_coursework\2\utility_functions.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -627,7 +625,7 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no ' in font nullfont!
+Missing character: There is no o in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no w in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -1501,19 +1499,20 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no . in font nullfont!
+Missing character: There is no : in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 8--11
 []
  []
 
 
-Overfull \hbox (129.01215pt too wide) detected at line 11
+Overfull \hbox (131.78993pt too wide) detected at line 11
 [] \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 r\OMS/cmsy/m/n/10 j\OML/
-cmm/m/it/10 Ag; Env\OT1/cmr/m/n/10 ) = 1
+cmm/m/it/10 Ag; Env\OT1/cmr/m/n/10 ) = 1\OML/cmm/m/it/10 ;
  []
 
-Missing character: There is no H in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -1542,7 +1541,6 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no r in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no h in font nullfont!
@@ -1611,8 +1609,6 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
-Missing character: There is no A in font nullfont!
-Missing character: There is no g in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
@@ -1630,6 +1626,54 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no . in font nullfont!
+
+Overfull \hbox (59.39355pt too wide) in paragraph at lines 11--13
+  $\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 r\OMS/cmsy/m/n/10 j\OML/
+cmm/m/it/10 Ag; Env\OT1/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (4.78937pt too wide) in paragraph at lines 11--13
+\OML/cmm/m/it/10 r$
+ []
+
+
+Overfull \hbox (12.62848pt too wide) in paragraph at lines 11--13
+\OML/cmm/m/it/10 Ag$
+ []
+
+
+Overfull \hbox (19.16667pt too wide) in paragraph at lines 11--13
+\OML/cmm/m/it/10 Env$
+ []
+
+
+Overfull \hbox (51.68752pt too wide) in paragraph at lines 11--13
+\OML/cmm/m/it/10 R\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Ag; Env\OT1/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (12.62848pt too wide) in paragraph at lines 11--13
+\OML/cmm/m/it/10 Ag$
+ []
+
+
+Overfull \hbox (19.16667pt too wide) in paragraph at lines 11--13
+\OML/cmm/m/it/10 Env$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 T
+      he concept of  expected utility is described by the next equation:
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 Missing character: There is no T in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -1685,48 +1729,26 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no . in font nullfont!
+Missing character: There is no : in font nullfont!
 
-Overfull \hbox (59.39355pt too wide) in paragraph at lines 11--14
-  $\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 r\OMS/cmsy/m/n/10 j\OML/
-cmm/m/it/10 Ag; Env\OT1/cmr/m/n/10 )$
+Overfull \hbox (20.0pt too wide) in paragraph at lines 14--15
+[]
  []
 
 
-Overfull \hbox (12.62848pt too wide) in paragraph at lines 11--14
-\OML/cmm/m/it/10 Ag$
- []
-
-
-Overfull \hbox (19.16667pt too wide) in paragraph at lines 11--14
-\OML/cmm/m/it/10 Env$
- []
-
-
-Overfull \hbox (51.68752pt too wide) in paragraph at lines 11--14
-\OML/cmm/m/it/10 R\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Ag; Env\OT1/cmr/m/n/10 )$
- []
-
-
-Overfull \hbox (19.16667pt too wide) in paragraph at lines 11--14
-\OML/cmm/m/it/10 Env$
- []
-
-
-Overfull \hbox (209.99702pt too wide) detected at line 14
+Overfull \hbox (212.77481pt too wide) detected at line 15
 \OML/cmm/m/it/10 u[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Ag; Env\OT1/cmr/m/n/10 ) 
 = [] \OML/cmm/m/it/10 u\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 r\OT1/cmr/m/n/10 ) \OM
 S/cmsy/m/n/10  \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 r\OMS/cmsy/
-m/n/10 j\OML/cmm/m/it/10 Ag; Env\OT1/cmr/m/n/10 )
+m/n/10 j\OML/cmm/m/it/10 Ag; Env\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;
  []
 
-Missing character: There is no T in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no w in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no ( in font nullfont!
 Missing character: There is no r in font nullfont!
-Missing character: There is no ) in font nullfont!
+Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no p in font nullfont!
@@ -1769,6 +1791,24 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
+
+Overfull \hbox (18.29175pt too wide) in paragraph at lines 15--17
+  $\OML/cmm/m/it/10 u\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 r\OT1/cmr/m/n/10 )$
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 T
+      he optimal agent is considered to be the one that maximizes the expect...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 Missing character: There is no T in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -1837,12 +1877,19 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no y in font nullfont!
-Missing character: There is no . in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
 
-Overfull \hbox (156.29272pt too wide) detected at line 17
+Overfull \hbox (20.0pt too wide) in paragraph at lines 18--19
+[]
+ []
+
+
+Overfull \hbox (159.07051pt too wide) detected at line 19
 \OML/cmm/m/it/10 Ag[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Env\OT1/cmr/m/n/10 ) = [
 ] \OML/cmm/m/it/10 u[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Ag; Env\OT1/cmr/m/n/10 
-)
+)\OML/cmm/m/it/10 :
  []
 
 )
@@ -1854,10 +1901,10 @@ Overfull \hbox (156.29272pt too wide) detected at line 17
  
 Here is how much of TeX's memory you used:
  13 strings out of 493921
- 397 string characters out of 3148536
+ 337 string characters out of 3148536
  50031 words of memory out of 3000000
  3405 multiletter control sequences out of 15000+200000
  3948 words of font info for 15 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 20i,2n,26p,607b,92s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 20i,2n,26p,608b,92s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!

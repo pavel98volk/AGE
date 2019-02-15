@@ -5,7 +5,7 @@ Let us compare human mind creative process to the corresponding example based on
 The storyline-creator's activity can be decomposed into several smaller activities. To simplify the terminology these small activities will be referred as ``voices''. Let us consider the example voice set depicted in Figure~\ref{Voices}:
  \begin{figure}[h!]
     \begin{center}
-      \includegraphics[width=400pt]{voices}
+      \includegraphics[width=300pt]{voices}
       \caption{The set of voices to be used to model human thinking process.}
       \label{Voices}
      \end{center}
@@ -15,12 +15,12 @@ The storyline-creator's activity can be decomposed into several smaller activiti
 \item \textbf{The builder's voice} is used to generate new entities and destroy the useless ones. Creates the chicken.
 \item \textbf{The manager's voice} checks the simulations for exceptions and errors. Handles system's response on the flying chicken.
 \item \textbf{The observer's voice} collects the most useful data for the final result. Creates the legend of the flying chicken.
-\item \textbf{The sage's voice} retrieves requested information from a knowledge base. States that usually chickens can not fly, but they are yellow, small, and produce the sound, contained in ``chicken\_sound.mp3''.
+\item \textbf{The sage's voice} retrieves requested information from a knowledge base. States that usually chickens can not fly, but they are yellow, small, and produce the sound, contained in \texttt{``chicken\_sound.mp3''}.
 \end{itemize}
 Each of this voices can be supplemented to \textit{Model0} as interface that can either be automated or used to transfer information between human and simulation. In terms of simulation framework this voices may correspond to the following classes:
 \begin{itemize}
 \item \textbf{GameThinkerVoice} is called whether there is no method defined to handle an event.
-\item \textbf{GameBuilderVoice} is used to fill the environment with appropriate \texttt{GameObjects}, \texttt{GameAgents}, \texttt{GameEnvironmentObjects} and \texttt{GameEnvironmentAgents}. Also it can dynamically add properties. To separate these 2 activities it can be divided in 2 voices: \texttt{GameCreatorVoice} and \texttt{GameRefinerVoice}.
+\item \textbf{GameBuilderVoice} is used to fill the environment with appropriate \texttt{GameObjects}, \texttt{GameAgents}, \texttt{GameEnvironmentObjects} and \break \texttt{GameEnvironmentAgents}. Also it can dynamically add properties. To separate these 2 activities it can be divided in 2 voices: \texttt{GameCreatorVoice} and \texttt{GameRefinerVoice}.
 \item \textbf{GameManagerVoice} coordinates the actions of another voices. Handles errors in case other voices are malfunctioning. Also it can be responsible for pausing, stopping, and restarting the simulation.
 \item \textbf{GameObserverVoice} retrieves and processes useful simulation data while having full access to every bit of information in the simulation.
 \item \textbf{GameSageVoice} is used whether there is a need to define any properties of an entity.

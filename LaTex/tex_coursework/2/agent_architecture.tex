@@ -13,13 +13,13 @@ A run \(r\) of an agent \(Ag\) in the environment is thus the sequence of interl
 In this architecture, state transition function maps a run to a set of possible environment states in which the environment might be transferred by the last action from the corresponding run. This formula allows to describe nondeterministic history-dependent environments. The agents, however, must be deterministic.
 Here is a simple example.
 \begin{example}
- There is a room with a gnome and an apple. The gnome can eat the apple. This environment has 2 states: \(E=\{e,e'\}\), $e$ - apple is in the room, $e'$ - there is no apple in the room.\newline
+ There is a room with a gnome and an apple. The gnome can eat the apple. This environment has 2 states: \(E=\{e,e'\}\), $e$ -- apple is in the room, $e'$ -- there is no apple in the room.\newline
 The only agent in this environment is the gnome. Gnome's actions can be described as
 \(Ac = \{\alpha , \alpha'\} \), where
 $\alpha$ is to do nothing and
 $\alpha'$ is to try to eat the apple. \newline
 And the example run would be \(r: e \xrightarrow{\text{\(\alpha\)}}  e \xrightarrow{\text{\(\alpha'\)}} e' \xrightarrow{\text{\(\alpha'\)}} e' \xrightarrow{\text{\(\alpha\)}} e' \).\par
-In this run the gnome does nothing during its first turn, then eats the apple, thus changing the environment state. According to the results of this run it might be assumed, that informal specification of agent function would result in eating apple only if the gnome either didn't try to eat or successfully ate the apple on the previous turn.
+In this run the gnome does nothing during its first turn, then eats the apple, thus changing the environment state. According to the results of this run it might be assumed, that informal specification of agent function would result in eating apple only if the gnome either did not try to eat or successfully ate the apple on the previous turn.
 \end{example}
 This architecture is suitable for describing agents with memory thus being able to used for description of any deterministic agent.
 The only drawbacks of such approach in designing a real agent are:
@@ -29,8 +29,8 @@ The only drawbacks of such approach in designing a real agent are:
 \end{enumerate}
 However, there are subclasses of generic agent that can be described in a simpler / more detailed way \cite{DUMMY:1}.
 \begin{itemize}
-\item \textbf{Purely reactive agents.} These are basically the agents with no memory. Their decisions to take actions are dependent only on what they've perceived on this turn. They can be described by \(Ag : R\rightarrow Ac\) function and can be easily tested due to being stateless.
-\item \textbf{Agents with state.} In this case, we impose restrictions on the internal structure of an agent. Each agent is given a function \(see : E\rightarrow Per\) that determines what part of the environment state the agent can perceive. After information is being perceived, it can influence the internal state $i$ of the agent. This process is described by \(next : I*Per\rightarrow I\). Finally, when the next state is determined, it might trigger one of possible actions \(action: I\rightarrow Ac\). The architecture is depicted in Figure \ref{StateAgent}
+\item \textbf{Purely reactive agents.} These are basically the agents with no memory. Their decisions to take actions are dependent only on what they have perceived on this turn. They can be described by \(Ag : R\rightarrow Ac\) function and can be easily tested due to being stateless.
+\item \textbf{Agents with state.} In this case, we impose restrictions on the internal structure of an agent. Each agent is given a function \(see : E\rightarrow Per\) that determines what part of the environment state the agent can perceive. After information is being perceived, it can influence the internal state $i$ of the agent. This process is described by \(next : I*Per\rightarrow I\). Finally, when the next state is determined, it might trigger one of possible actions \(action: I\rightarrow Ac\). The architecture is depicted in Figure~\ref{StateAgent}.
     \begin{figure}[h!]
      \begin{center}
       \includegraphics[width=500pt]{agent_with_state}
@@ -41,7 +41,7 @@ However, there are subclasses of generic agent that can be described in a simple
 \end{itemize}
 Besides this architectures, there are also less formal and more human-like approaches.
 One of them is called BDI (Belief-Desire-Intention) execution model \cite{DUMMY:1}.
-BDI architecture uses terms from a folk psychology to describe the agent's behavioral structure. The 4 key concepts of this model are Belief, Desire, Intention and Plan (see Fig.\ref{BDIAgent}). Beliefs represent the agent's internal state. Desires are used by the reasoner (logical part of the agent) to determine the optimal course of actions. Intentions consist of actions that are going to be executed by the agent in order for it to achieve some of its desires. And, finally, plans can be described as long-term composite structures, that encapsulate an enumerated set of actions (intentions), used to simplify the belief system \cite[p.~150]{DUMMY:2}.
+BDI architecture uses terms from a folk psychology to describe the agent's behavioral structure. The 4 key concepts of this model are Belief, Desire, Intention and Plan (see Figure~\ref{BDIAgent}). Beliefs represent the agent's internal state. Desires are used by the reasoner (logical part of the agent) to determine the optimal course of actions. Intentions consist of actions that are going to be executed by the agent in order for it to achieve some of its desires. And, finally, plans can be described as long-term composite structures, that encapsulate an enumerated set of actions (intentions), used to simplify the belief system \cite[p.~150]{DUMMY:2}.
     \begin{figure}[h!]
       \begin{center}
       \includegraphics[width=400pt]{BDI}

@@ -1,5 +1,5 @@
 \section{Framework Design}
-This section describes how to move from the abstract architecture created earlier to a more specific framework design. However, the design should not connected to any particular programming language.The results off this formalizing stage will be referenced as \textbf{Model1}
+This section describes how to move from the abstract architecture created earlier to a more specific framework design. However, the design should not connected to any particular programming language.The results off this formalizing stage will be referenced as \textbf{Model1}.
 \begin{center}
     \textbf{Model1 specification}
 \end{center}
@@ -26,7 +26,6 @@ It is easier to specify \texttt{GameEnvironment} part by part.
 
 \subsection{GameEnvironmentObject/GameEnvironmentAgent} \\
 The peculiarity of \texttt{GameDoubleObject} has additional $setInternalMessage$ function that can be invoked by its event handlers. To send a message to the external environment after being ``disturbed'' by the internal one or vice versa the \texttt{GameDoubleObject} should have the destination of the messages which it can send, therefore it should be given internal \texttt{GameEnvironmentMessageHandler} as well as the external one upon creation similarly to \texttt{GameAgent}.
-
 \subsection{Advantages of Using \textit{Model0V} Voices in \textit{Model1}}\break
-\paragraph{Attention driven resource distribution}
+ Attention driven resource distribution.
  To achieve better distribution of computational resources each agent can feature the external property of attention, assigned and constantly changed by the \texttt{GameObserverVoice} entity. If the attention to the entity drops below minimum, it is reasonable to exclude this entity from the equation by destroying or ``freezing'' it. 
